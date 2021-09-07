@@ -16,5 +16,27 @@ namespace software_OnlyPans
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if (txtcontraseña.Text == "1234" & txtusuario.Text == "admin")
+            {
+                this.Hide();
+                Form admins = new Admins();
+                admins.Show();
+            }
+            if (txtcontraseña.Text == "4321" & txtusuario.Text == "usuario")
+            {
+                this.Hide();
+                Form empleados = new Empleados();
+                empleados.Show();
+            }
+        }
+
     }
 }
