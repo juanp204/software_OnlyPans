@@ -44,6 +44,8 @@ namespace software_OnlyPans
             this.rtxtresultado = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
+            this.btncerrarsesion = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
@@ -100,7 +102,6 @@ namespace software_OnlyPans
             this.rbtnaliñado.Name = "rbtnaliñado";
             this.rbtnaliñado.Size = new System.Drawing.Size(75, 21);
             this.rbtnaliñado.TabIndex = 12;
-            this.rbtnaliñado.TabStop = true;
             this.rbtnaliñado.Text = "aliñado";
             this.rbtnaliñado.UseVisualStyleBackColor = true;
             this.rbtnaliñado.CheckedChanged += new System.EventHandler(this.rbtnaliñado_CheckedChanged);
@@ -115,6 +116,7 @@ namespace software_OnlyPans
             this.rbtnnoaliñado.TabStop = true;
             this.rbtnnoaliñado.Text = "no aliñado";
             this.rbtnnoaliñado.UseVisualStyleBackColor = true;
+            this.rbtnnoaliñado.CheckedChanged += new System.EventHandler(this.rbtnnoaliñado_CheckedChanged);
             // 
             // rbtnespecial
             // 
@@ -126,6 +128,7 @@ namespace software_OnlyPans
             this.rbtnespecial.TabStop = true;
             this.rbtnespecial.Text = "especial";
             this.rbtnespecial.UseVisualStyleBackColor = true;
+            this.rbtnespecial.CheckedChanged += new System.EventHandler(this.rbtnespecial_CheckedChanged);
             // 
             // label3
             // 
@@ -181,11 +184,33 @@ namespace software_OnlyPans
             this.txtnombre.Size = new System.Drawing.Size(175, 22);
             this.txtnombre.TabIndex = 21;
             // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.Location = new System.Drawing.Point(666, 405);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Size = new System.Drawing.Size(108, 23);
+            this.btncerrarsesion.TabIndex = 22;
+            this.btncerrarsesion.Text = "cerrar sesión";
+            this.btncerrarsesion.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(549, 36);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(110, 21);
+            this.radioButton1.TabIndex = 23;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.btncerrarsesion);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rtxtresultado);
@@ -203,6 +228,7 @@ namespace software_OnlyPans
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Empleados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,5 +252,7 @@ namespace software_OnlyPans
         private System.Windows.Forms.RichTextBox rtxtresultado;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.Button btncerrarsesion;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

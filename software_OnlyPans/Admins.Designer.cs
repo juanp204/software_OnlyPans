@@ -38,7 +38,7 @@ namespace software_OnlyPans
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(241, 71);
+            this.label1.Location = new System.Drawing.Point(289, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 29);
             this.label1.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace software_OnlyPans
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Admins";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admins";
             this.ResumeLayout(false);
             this.PerformLayout();

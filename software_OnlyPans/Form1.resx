@@ -129,7 +129,7 @@
     <value>0</value>
   </data>
   <data name="btnlogin.Text" xml:space="preserve">
-    <value>Iniciar Secion</value>
+    <value>Iniciar Sesión</value>
   </data>
   <data name="&gt;&gt;btnlogin.Name" xml:space="preserve">
     <value>btnlogin</value>
@@ -150,7 +150,7 @@
     <value>Microsoft Sans Serif, 13.8pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 141</value>
+    <value>96, 140</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 29</value>
@@ -204,7 +204,7 @@
     <value>4</value>
   </data>
   <data name="txtusuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 199</value>
+    <value>197, 203</value>
   </data>
   <data name="txtusuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 22</value>
@@ -225,7 +225,7 @@
     <value>3</value>
   </data>
   <data name="txtcontraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 345</value>
+    <value>197, 346</value>
   </data>
   <data name="txtcontraseña.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 22</value>
