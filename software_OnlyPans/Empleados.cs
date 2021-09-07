@@ -38,7 +38,7 @@ namespace software_OnlyPans
             totalespecial = cantidadespecial * 2000;
             Totalventa = (totalaliñado+totalespecial+totalnoaliñado);
 
-            rtxtresultado.Text = rtxtresultado.Text = "cedula = "+txtcedula.Text+"\n";
+            rtxtresultado.Text = rtxtresultado.Text + "nombre: "+ txtnombre.Text+"\ncedula: "+txtcedula.Text+"\n";
             if (rbtnaliñado.Checked == true)
             {
                 rtxtresultado.Text = rtxtresultado.Text + "pan aliñado: " + "  cantidad: " + txtaliñado.Text + "Total : " + totalaliñado;
@@ -51,6 +51,7 @@ namespace software_OnlyPans
             {
                 rtxtresultado.Text = rtxtresultado.Text + "pan aliñado:  cantidad: " + txtespecial.Text + "Total : " + totalespecial;
             }
+            rtxtresultado.Text = rtxtresultado.Text + "\nTotal: " + Totalventa;
         }
     }
 }
