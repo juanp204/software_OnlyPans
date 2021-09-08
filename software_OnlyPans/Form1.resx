@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnlogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 416</value>
+    <value>376, 446</value>
   </data>
   <data name="btnlogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 56</value>
@@ -225,7 +225,7 @@
     <value>3</value>
   </data>
   <data name="txtcontraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 346</value>
+    <value>197, 348</value>
   </data>
   <data name="txtcontraseña.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 22</value>

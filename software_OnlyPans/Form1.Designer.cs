@@ -65,6 +65,7 @@ namespace software_OnlyPans
             // 
             resources.ApplyResources(this.txtcontraseña, "txtcontraseña");
             this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.UseSystemPasswordChar = true;
             // 
             // label3
             // 

@@ -30,11 +30,15 @@ namespace software_OnlyPans
                 Form admins = new Admins();
                 admins.Show();
             }
-            if (txtcontraseña.Text == "4321" & txtusuario.Text == "usuario")
+            else if (txtcontraseña.Text == "4321" & txtusuario.Text == "usuario")
             {
                 this.Hide();
                 Form empleados = new Empleados();
                 empleados.Show();
+            }
+            else
+            {
+                MessageBox.Show("usuario o contraseña incorrecta");
             }
         }
 

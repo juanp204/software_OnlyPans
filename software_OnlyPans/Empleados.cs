@@ -34,7 +34,7 @@ namespace software_OnlyPans
                 totalnoaliñado = 0;
                 totalespecial = 0;
 
-                rtxtresultado.Text = rtxtresultado.Text + "nombre: " + txtnombre.Text + "\ncedula: " + txtcedula.Text + "\n";
+                rtxtresultado.Text = rtxtresultado.Text + "nombre: " + txtnombre.Text + "\ncedula: " + txtcedula.Text + "\nFecha: " + dtpfecha.Value;
                 if (txtnombre.Text == "" | txtcedula.Text == "")
                 {
                     throw new Exception("error");
@@ -44,7 +44,7 @@ namespace software_OnlyPans
                     totalaliñado = Convert.ToDouble(txtaliñado.Text) * 1000;
                     rtxtresultado.Text = rtxtresultado.Text + "-pan aliñado:\ncantidad: " + txtaliñado.Text + " Total : " + totalaliñado+"\n";
                     borrar = borrar + ("-pan aliñado:\ncantidad: " + txtaliñado.Text + " Total : " + totalaliñado + "\n").Length;
-
+                    
                 }
                 if (cbxnoaliñado.Checked == true)
                 {
@@ -60,17 +60,19 @@ namespace software_OnlyPans
                     totalespecial = Convert.ToDouble(txtespecial.Text) * 2000;
                     rtxtresultado.Text = rtxtresultado.Text + "-pan especial:\ncantidad: " + txtespecial.Text + " Total : " + totalespecial+"\n";
                     borrar = borrar + ("-pan especial:\ncantidad: " + txtespecial.Text + " Total : " + totalespecial + "\n").Length;
+                    
                 }
                 Totalventa = (totalaliñado + totalespecial + totalnoaliñado);
-                rtxtresultado.Text = rtxtresultado.Text + "Total: " + Totalventa + "\n\n";
-                txtcedula.Text = "";
-                txtnombre.Text = "";
-                txtaliñado.Text = "";
-                txtnoaliñado.Text = "";
-                txtespecial.Text = "";
+                rtxtresultado.Text = rtxtresultado.Text + "Total: " + Totalventa + "\n------------------------------------------------\n";
+                txtcedula.Clear();
+                txtnombre.Clear();
+                txtaliñado.Clear();
+                txtnoaliñado.Clear();
+                txtespecial.Clear();
                 cbxaliñado.Checked = false;
                 cbxnoaliñado.Checked = false;
                 cbxespecial.Checked = false;
+                this.Close();
             }
             catch(Exception)
             {

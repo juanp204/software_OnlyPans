@@ -39,17 +39,18 @@ namespace software_OnlyPans
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(271, 104);
+            this.label1.Location = new System.Drawing.Point(216, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido admin";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(731, -1);
+            this.button1.Location = new System.Drawing.Point(730, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 45);
             this.button1.TabIndex = 7;
@@ -59,7 +60,7 @@ namespace software_OnlyPans
             // 
             // btncerrarsesion
             // 
-            this.btncerrarsesion.Location = new System.Drawing.Point(294, 338);
+            this.btncerrarsesion.Location = new System.Drawing.Point(250, 259);
             this.btncerrarsesion.Name = "btncerrarsesion";
             this.btncerrarsesion.Size = new System.Drawing.Size(172, 84);
             this.btncerrarsesion.TabIndex = 8;
