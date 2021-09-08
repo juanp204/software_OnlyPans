@@ -45,7 +45,12 @@ namespace software_OnlyPans
             this.label4 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.btncerrarsesion = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -97,38 +102,39 @@ namespace software_OnlyPans
             // 
             // rbtnaliñado
             // 
+            this.rbtnaliñado.AutoCheck = false;
             this.rbtnaliñado.AutoSize = true;
-            this.rbtnaliñado.Location = new System.Drawing.Point(87, 257);
+            this.rbtnaliñado.Location = new System.Drawing.Point(10, 4);
             this.rbtnaliñado.Name = "rbtnaliñado";
             this.rbtnaliñado.Size = new System.Drawing.Size(75, 21);
             this.rbtnaliñado.TabIndex = 12;
             this.rbtnaliñado.Text = "aliñado";
             this.rbtnaliñado.UseVisualStyleBackColor = true;
-            this.rbtnaliñado.CheckedChanged += new System.EventHandler(this.rbtnaliñado_CheckedChanged);
+            this.rbtnaliñado.Click += new System.EventHandler(this.rtbnaliñadoclick);
             // 
             // rbtnnoaliñado
             // 
+            this.rbtnnoaliñado.AutoCheck = false;
             this.rbtnnoaliñado.AutoSize = true;
-            this.rbtnnoaliñado.Location = new System.Drawing.Point(87, 284);
+            this.rbtnnoaliñado.Location = new System.Drawing.Point(10, 6);
             this.rbtnnoaliñado.Name = "rbtnnoaliñado";
             this.rbtnnoaliñado.Size = new System.Drawing.Size(95, 21);
             this.rbtnnoaliñado.TabIndex = 13;
-            this.rbtnnoaliñado.TabStop = true;
             this.rbtnnoaliñado.Text = "no aliñado";
             this.rbtnnoaliñado.UseVisualStyleBackColor = true;
-            this.rbtnnoaliñado.CheckedChanged += new System.EventHandler(this.rbtnnoaliñado_CheckedChanged);
+            this.rbtnnoaliñado.Click += new System.EventHandler(this.rbtnnoaliñadoclick);
             // 
             // rbtnespecial
             // 
+            this.rbtnespecial.AutoCheck = false;
             this.rbtnespecial.AutoSize = true;
-            this.rbtnespecial.Location = new System.Drawing.Point(87, 311);
+            this.rbtnespecial.Location = new System.Drawing.Point(10, 3);
             this.rbtnespecial.Name = "rbtnespecial";
             this.rbtnespecial.Size = new System.Drawing.Size(81, 21);
             this.rbtnespecial.TabIndex = 14;
-            this.rbtnespecial.TabStop = true;
             this.rbtnespecial.Text = "especial";
             this.rbtnespecial.UseVisualStyleBackColor = true;
-            this.rbtnespecial.CheckedChanged += new System.EventHandler(this.rbtnespecial_CheckedChanged);
+            this.rbtnespecial.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbtnespecialclick);
             // 
             // label3
             // 
@@ -162,9 +168,9 @@ namespace software_OnlyPans
             // 
             // rtxtresultado
             // 
-            this.rtxtresultado.Location = new System.Drawing.Point(498, 70);
+            this.rtxtresultado.Location = new System.Drawing.Point(458, 62);
             this.rtxtresultado.Name = "rtxtresultado";
-            this.rtxtresultado.Size = new System.Drawing.Size(200, 273);
+            this.rtxtresultado.Size = new System.Drawing.Size(276, 273);
             this.rtxtresultado.TabIndex = 19;
             this.rtxtresultado.Text = "";
             // 
@@ -193,23 +199,38 @@ namespace software_OnlyPans
             this.btncerrarsesion.Text = "cerrar sesión";
             this.btncerrarsesion.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // panel1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(549, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 23;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.rbtnaliñado);
+            this.panel1.Location = new System.Drawing.Point(87, 257);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(119, 25);
+            this.panel1.TabIndex = 24;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.rbtnnoaliñado);
+            this.panel2.Location = new System.Drawing.Point(87, 285);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(119, 30);
+            this.panel2.TabIndex = 25;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.rbtnespecial);
+            this.panel3.Location = new System.Drawing.Point(87, 321);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(119, 30);
+            this.panel3.TabIndex = 26;
             // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btncerrarsesion);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label4);
@@ -218,9 +239,6 @@ namespace software_OnlyPans
             this.Controls.Add(this.txtnoaliñado);
             this.Controls.Add(this.txtaliñado);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.rbtnespecial);
-            this.Controls.Add(this.rbtnnoaliñado);
-            this.Controls.Add(this.rbtnaliñado);
             this.Controls.Add(this.btnenviar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtcedula);
@@ -230,6 +248,12 @@ namespace software_OnlyPans
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,6 +277,8 @@ namespace software_OnlyPans
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Button btncerrarsesion;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
