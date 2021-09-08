@@ -23,5 +23,10 @@ namespace software_OnlyPans
         {
             Application.Exit();
         }
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

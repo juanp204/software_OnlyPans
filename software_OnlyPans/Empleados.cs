@@ -39,14 +39,14 @@ namespace software_OnlyPans
                 {
                     throw new Exception("error");
                 }
-                if (rbtnaliñado.Checked == true)
+                if (cbxaliñado.Checked == true)
                 {
                     totalaliñado = Convert.ToDouble(txtaliñado.Text) * 1000;
                     rtxtresultado.Text = rtxtresultado.Text + "-pan aliñado:\ncantidad: " + txtaliñado.Text + " Total : " + totalaliñado+"\n";
                     borrar = borrar + ("-pan aliñado:\ncantidad: " + txtaliñado.Text + " Total : " + totalaliñado + "\n").Length;
 
                 }
-                if (rbtnnoaliñado.Checked == true)
+                if (cbxnoaliñado.Checked == true)
                 {
 
                     totalnoaliñado = Convert.ToDouble(txtnoaliñado.Text) * 500;
@@ -55,7 +55,7 @@ namespace software_OnlyPans
 
 
                 }
-                if (rbtnespecial.Checked == true)
+                if (cbxespecial.Checked == true)
                 {
                     totalespecial = Convert.ToDouble(txtespecial.Text) * 2000;
                     rtxtresultado.Text = rtxtresultado.Text + "-pan especial:\ncantidad: " + txtespecial.Text + " Total : " + totalespecial+"\n";
@@ -68,9 +68,9 @@ namespace software_OnlyPans
                 txtaliñado.Text = "";
                 txtnoaliñado.Text = "";
                 txtespecial.Text = "";
-                rbtnaliñado.Checked = false;
-                rbtnnoaliñado.Checked = false;
-                rbtnespecial.Checked = false;
+                cbxaliñado.Checked = false;
+                cbxnoaliñado.Checked = false;
+                cbxespecial.Checked = false;
             }
             catch(Exception)
             {
@@ -78,43 +78,6 @@ namespace software_OnlyPans
                 MessageBox.Show("datos no validos o espacios en balnco");
             }
             
-        }
-
-        private void rtbnaliñadoclick(object sender, EventArgs e)
-        {
-            if (rbtnaliñado.Checked == true)
-            {
-                rbtnaliñado.Checked = false;
-            }
-            if (rbtnaliñado.Checked == false)
-            {
-                rbtnaliñado.Checked = true;
-            }
-        }
-
-        private void rbtnnoaliñadoclick(object sender, EventArgs e)
-        {
-            if(rbtnnoaliñado.Checked == true)
-            {
-               rbtnnoaliñado.Checked = false;
-            }
-            if(rbtnnoaliñado.Checked == false)
-            {
-               rbtnnoaliñado.Checked = true;
-            }
-        }
-
-
-        private void rbtnespecialclick(object sender, MouseEventArgs e)
-        {
-            if (rbtnespecial.Checked == true)
-            {
-                rbtnespecial.Checked = false;
-            }
-            if (rbtnespecial.Checked == false)
-            {
-                rbtnespecial.Checked = true;
-            }
         }
 
         

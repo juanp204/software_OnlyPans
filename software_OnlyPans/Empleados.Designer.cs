@@ -34,9 +34,6 @@ namespace software_OnlyPans
             this.txtcedula = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnenviar = new System.Windows.Forms.Button();
-            this.rbtnaliñado = new System.Windows.Forms.RadioButton();
-            this.rbtnnoaliñado = new System.Windows.Forms.RadioButton();
-            this.rbtnespecial = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtaliñado = new System.Windows.Forms.TextBox();
             this.txtnoaliñado = new System.Windows.Forms.TextBox();
@@ -45,12 +42,9 @@ namespace software_OnlyPans
             this.label4 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.btncerrarsesion = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.cbxnoaliñado = new System.Windows.Forms.CheckBox();
+            this.cbxaliñado = new System.Windows.Forms.CheckBox();
+            this.cbxespecial = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -92,49 +86,13 @@ namespace software_OnlyPans
             // 
             // btnenviar
             // 
-            this.btnenviar.Location = new System.Drawing.Point(148, 395);
+            this.btnenviar.Location = new System.Drawing.Point(125, 384);
             this.btnenviar.Name = "btnenviar";
-            this.btnenviar.Size = new System.Drawing.Size(75, 23);
+            this.btnenviar.Size = new System.Drawing.Size(93, 33);
             this.btnenviar.TabIndex = 11;
             this.btnenviar.Text = "enviar";
             this.btnenviar.UseVisualStyleBackColor = true;
             this.btnenviar.Click += new System.EventHandler(this.btnenviar_Click);
-            // 
-            // rbtnaliñado
-            // 
-            this.rbtnaliñado.AutoCheck = false;
-            this.rbtnaliñado.AutoSize = true;
-            this.rbtnaliñado.Location = new System.Drawing.Point(10, 4);
-            this.rbtnaliñado.Name = "rbtnaliñado";
-            this.rbtnaliñado.Size = new System.Drawing.Size(75, 21);
-            this.rbtnaliñado.TabIndex = 12;
-            this.rbtnaliñado.Text = "aliñado";
-            this.rbtnaliñado.UseVisualStyleBackColor = true;
-            this.rbtnaliñado.Click += new System.EventHandler(this.rtbnaliñadoclick);
-            // 
-            // rbtnnoaliñado
-            // 
-            this.rbtnnoaliñado.AutoCheck = false;
-            this.rbtnnoaliñado.AutoSize = true;
-            this.rbtnnoaliñado.Location = new System.Drawing.Point(10, 6);
-            this.rbtnnoaliñado.Name = "rbtnnoaliñado";
-            this.rbtnnoaliñado.Size = new System.Drawing.Size(95, 21);
-            this.rbtnnoaliñado.TabIndex = 13;
-            this.rbtnnoaliñado.Text = "no aliñado";
-            this.rbtnnoaliñado.UseVisualStyleBackColor = true;
-            this.rbtnnoaliñado.Click += new System.EventHandler(this.rbtnnoaliñadoclick);
-            // 
-            // rbtnespecial
-            // 
-            this.rbtnespecial.AutoCheck = false;
-            this.rbtnespecial.AutoSize = true;
-            this.rbtnespecial.Location = new System.Drawing.Point(10, 3);
-            this.rbtnespecial.Name = "rbtnespecial";
-            this.rbtnespecial.Size = new System.Drawing.Size(81, 21);
-            this.rbtnespecial.TabIndex = 14;
-            this.rbtnespecial.Text = "especial";
-            this.rbtnespecial.UseVisualStyleBackColor = true;
-            this.rbtnespecial.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rbtnespecialclick);
             // 
             // label3
             // 
@@ -199,38 +157,44 @@ namespace software_OnlyPans
             this.btncerrarsesion.Text = "cerrar sesión";
             this.btncerrarsesion.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // cbxnoaliñado
             // 
-            this.panel1.Controls.Add(this.rbtnaliñado);
-            this.panel1.Location = new System.Drawing.Point(87, 257);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(119, 25);
-            this.panel1.TabIndex = 24;
+            this.cbxnoaliñado.AutoSize = true;
+            this.cbxnoaliñado.Location = new System.Drawing.Point(90, 287);
+            this.cbxnoaliñado.Name = "cbxnoaliñado";
+            this.cbxnoaliñado.Size = new System.Drawing.Size(96, 21);
+            this.cbxnoaliñado.TabIndex = 27;
+            this.cbxnoaliñado.Text = "no aliñado";
+            this.cbxnoaliñado.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // cbxaliñado
             // 
-            this.panel2.Controls.Add(this.rbtnnoaliñado);
-            this.panel2.Location = new System.Drawing.Point(87, 285);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(119, 30);
-            this.panel2.TabIndex = 25;
+            this.cbxaliñado.AutoSize = true;
+            this.cbxaliñado.Location = new System.Drawing.Point(90, 259);
+            this.cbxaliñado.Name = "cbxaliñado";
+            this.cbxaliñado.Size = new System.Drawing.Size(76, 21);
+            this.cbxaliñado.TabIndex = 28;
+            this.cbxaliñado.Text = "aliñado";
+            this.cbxaliñado.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // cbxespecial
             // 
-            this.panel3.Controls.Add(this.rbtnespecial);
-            this.panel3.Location = new System.Drawing.Point(87, 321);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(119, 30);
-            this.panel3.TabIndex = 26;
+            this.cbxespecial.AutoSize = true;
+            this.cbxespecial.Location = new System.Drawing.Point(90, 315);
+            this.cbxespecial.Name = "cbxespecial";
+            this.cbxespecial.Size = new System.Drawing.Size(82, 21);
+            this.cbxespecial.TabIndex = 29;
+            this.cbxespecial.Text = "especial";
+            this.cbxespecial.UseVisualStyleBackColor = true;
             // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cbxespecial);
+            this.Controls.Add(this.cbxaliñado);
+            this.Controls.Add(this.cbxnoaliñado);
             this.Controls.Add(this.btncerrarsesion);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label4);
@@ -248,12 +212,6 @@ namespace software_OnlyPans
             this.Name = "Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Empleados";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,9 +224,6 @@ namespace software_OnlyPans
         private System.Windows.Forms.TextBox txtcedula;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnenviar;
-        private System.Windows.Forms.RadioButton rbtnaliñado;
-        private System.Windows.Forms.RadioButton rbtnnoaliñado;
-        private System.Windows.Forms.RadioButton rbtnespecial;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtaliñado;
         private System.Windows.Forms.TextBox txtnoaliñado;
@@ -277,8 +232,8 @@ namespace software_OnlyPans
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Button btncerrarsesion;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.CheckBox cbxnoaliñado;
+        private System.Windows.Forms.CheckBox cbxaliñado;
+        private System.Windows.Forms.CheckBox cbxespecial;
     }
 }
