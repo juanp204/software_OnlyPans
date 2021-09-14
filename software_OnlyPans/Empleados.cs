@@ -82,6 +82,11 @@ namespace software_OnlyPans
             
         }
 
-        
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            Form1 iniciarsecion = new Form1();
+            iniciarsecion.Show();
+            this.Close();
+        }
     }
 }

@@ -44,7 +44,6 @@ namespace software_OnlyPans
             this.label1.Size = new System.Drawing.Size(206, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido admin";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
@@ -56,6 +55,7 @@ namespace software_OnlyPans
             this.button1.TabIndex = 7;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btncerrarsesion

@@ -59,6 +59,7 @@ namespace software_OnlyPans
             this.button1.TabIndex = 7;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -158,6 +159,7 @@ namespace software_OnlyPans
             this.btncerrarsesion.TabIndex = 22;
             this.btncerrarsesion.Text = "cerrar sesión";
             this.btncerrarsesion.UseVisualStyleBackColor = true;
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
             // 
             // cbxnoaliñado
             // 

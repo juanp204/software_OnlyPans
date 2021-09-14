@@ -26,15 +26,9 @@ namespace software_OnlyPans
 
         private void btncerrarsesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 cerrar = new Form1();
-            cerrar.Show();
-            //Form1.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            Form1 iniciarsesion = new Form1();
+            iniciarsesion.Show();
+            this.Close();
         }
     }
 }
