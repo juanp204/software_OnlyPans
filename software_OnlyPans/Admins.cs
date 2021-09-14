@@ -27,6 +27,7 @@ namespace software_OnlyPans
         private void btncerrarsesion_Click(object sender, EventArgs e)
         {
             Form1 iniciarsesion = new Form1();
+            iniciarsesion.MdiParent = this.MdiParent;
             iniciarsesion.Show();
             this.Close();
         }

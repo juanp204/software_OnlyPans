@@ -26,15 +26,17 @@ namespace software_OnlyPans
         {
             if (txtcontraseña.Text == "1234" & txtusuario.Text == "admin")
             {
-                this.Close();
                 Form admins = new Admins();
+                admins.MdiParent = this.MdiParent;
                 admins.Show();
+                this.Close();
             }
             else if (txtcontraseña.Text == "4321" & txtusuario.Text == "usuario")
             {
-                this.Close();
                 Form empleados = new Empleados();
+                empleados.MdiParent = this.MdiParent;
                 empleados.Show();
+                this.Close();
             }
             else
             {
